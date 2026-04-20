@@ -1,0 +1,82 @@
+<h2>Information Architecture — Two Personas</h2>
+<p class="subtitle">Based on what we know so far. Help me fill in the gaps.</p>
+
+<div style="display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-top:24px;">
+
+  <!-- Underwriter Ops -->
+  <div style="background:#1a2233;border:1px solid #2a3a55;border-radius:12px;padding:20px;">
+    <div style="display:flex;align-items:center;gap:10px;margin-bottom:16px;">
+      <div style="width:36px;height:36px;border-radius:50%;background:#1766D6;display:flex;align-items:center;justify-content:center;font-weight:700;color:#fff;font-size:14px;">U</div>
+      <div>
+        <div style="font-weight:700;color:#fff;font-size:15px;">Underwriter Ops</div>
+        <div style="font-size:12px;color:#8899aa;">Loan origination & case prep</div>
+      </div>
+    </div>
+    <div style="display:flex;flex-direction:column;gap:8px;">
+      <div style="background:#0f1829;border-radius:8px;padding:10px 14px;border-left:3px solid #1766D6;">
+        <div style="color:#c8d8f0;font-size:13px;font-weight:600;">1. Create Case</div>
+        <div style="color:#6677aa;font-size:11px;margin-top:2px;">Manual entry or bulk upload</div>
+      </div>
+      <div style="background:#0f1829;border-radius:8px;padding:10px 14px;border-left:3px solid #1766D6;">
+        <div style="color:#c8d8f0;font-size:13px;font-weight:600;">2. My Cases / Dashboard</div>
+        <div style="color:#6677aa;font-size:11px;margin-top:2px;">View list of assigned cases</div>
+      </div>
+      <div style="background:#0f1829;border-radius:8px;padding:10px 14px;border-left:3px solid #1766D6;">
+        <div style="color:#c8d8f0;font-size:13px;font-weight:600;">3. Case Detail</div>
+        <div style="color:#6677aa;font-size:11px;margin-top:2px;">Entity info, financials, documents</div>
+      </div>
+      <div style="background:#0f1829;border-radius:8px;padding:10px 14px;border-left:3px solid #1766D6;">
+        <div style="color:#c8d8f0;font-size:13px;font-weight:600;">4. Review Auto-CAM</div>
+        <div style="color:#6677aa;font-size:11px;margin-top:2px;">AI-generated Credit Appraisal Memo</div>
+      </div>
+      <div style="background:#0f1829;border-radius:8px;padding:10px 14px;border-left:3px solid #4CAF47;">
+        <div style="color:#c8d8f0;font-size:13px;font-weight:600;">5. Send to Credit Head →</div>
+        <div style="color:#6677aa;font-size:11px;margin-top:2px;">Submit for review / suggestions</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Credit Head -->
+  <div style="background:#1a2233;border:1px solid #2a3a55;border-radius:12px;padding:20px;">
+    <div style="display:flex;align-items:center;gap:10px;margin-bottom:16px;">
+      <div style="width:36px;height:36px;border-radius:50%;background:#CB7100;display:flex;align-items:center;justify-content:center;font-weight:700;color:#fff;font-size:14px;">C</div>
+      <div>
+        <div style="font-weight:700;color:#fff;font-size:15px;">Credit Head</div>
+        <div style="font-size:12px;color:#8899aa;">Final approval authority</div>
+      </div>
+    </div>
+    <div style="display:flex;flex-direction:column;gap:8px;">
+      <div style="background:#0f1829;border-radius:8px;padding:10px 14px;border-left:3px solid #CB7100;">
+        <div style="color:#c8d8f0;font-size:13px;font-weight:600;">1. Inbox / Review Queue</div>
+        <div style="color:#6677aa;font-size:11px;margin-top:2px;">Cases submitted by Underwriters</div>
+      </div>
+      <div style="background:#0f1829;border-radius:8px;padding:10px 14px;border-left:3px solid #CB7100;">
+        <div style="color:#c8d8f0;font-size:13px;font-weight:600;">2. Review CAM</div>
+        <div style="color:#6677aa;font-size:11px;margin-top:2px;">Read auto-generated appraisal memo</div>
+      </div>
+      <div style="background:#0f1829;border-radius:8px;padding:10px 14px;border-left:3px solid #CB7100;">
+        <div style="color:#c8d8f0;font-size:13px;font-weight:600;">3. Review Proof / Docs</div>
+        <div style="color:#6677aa;font-size:11px;margin-top:2px;">Financials, KYC, supporting files</div>
+      </div>
+      <div style="background:#0f1829;border-radius:8px;padding:10px 14px;border-left:3px solid #CB7100;">
+        <div style="color:#c8d8f0;font-size:13px;font-weight:600;">4. Add Suggestions / Notes</div>
+        <div style="color:#6677aa;font-size:11px;margin-top:2px;">Comments back to underwriter?</div>
+      </div>
+      <div style="background:#0f1829;border-radius:8px;padding:10px 14px;border-left:3px solid #E23318;">
+        <div style="color:#c8d8f0;font-size:13px;font-weight:600;">5. Approve / Reject →</div>
+        <div style="color:#6677aa;font-size:11px;margin-top:2px;">Final decision on the loan</div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<div style="margin-top:24px;background:#111827;border:1px solid #2a3a55;border-radius:8px;padding:16px;">
+  <div style="color:#8899aa;font-size:12px;font-weight:600;text-transform:uppercase;letter-spacing:0.5px;margin-bottom:8px;">Open Questions</div>
+  <div style="display:flex;flex-direction:column;gap:6px;">
+    <div style="color:#c8d8f0;font-size:13px;">❓ Do both personas log into the <strong>same app</strong> or separate portals?</div>
+    <div style="color:#c8d8f0;font-size:13px;">❓ Can a Credit Head <strong>send back</strong> to Underwriter for rework (not just approve/reject)?</div>
+    <div style="color:#c8d8f0;font-size:13px;">❓ Where does the <strong>Alerts</strong> page fit — which persona sees it?</div>
+    <div style="color:#c8d8f0;font-size:13px;">❓ What is the <strong>Terminal / CAM page</strong> in the current codebase — is that the auto-CAM review?</div>
+  </div>
+</div>
